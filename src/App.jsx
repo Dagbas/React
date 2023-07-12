@@ -33,10 +33,10 @@ function App() {
           <div className="col-md-6 ">
             <div className="input-group mb-3">
               <form>
-                <input type="text" className="form-control" placeholder="Movie Title" aria-label="Movie Title Input" />
-                <input type="text" className="form-control" placeholder="Description" aria-label="Movie Title Input" />
-                <input type="text" className="form-control" placeholder="Year" aria-label="Movie Title Input" />
-                <input type="text" className="form-control" placeholder="Genre" aria-label="Movie Title Input" />
+                <input type="text" className="form-control" name="title" placeholder="Movie Title" aria-label="Movie Title Input" />
+                <input type="text" className="form-control" name="description" placeholder="Description" aria-label="Movie Title Input" />
+                <input type="text" className="form-control" name="year" placeholder="Year" aria-label="Movie Title Input" />
+                <input type="text" className="form-control" name="genre" placeholder="Genre" aria-label="Movie Title Input" />
               </form>
 
               <div className="input-group-append">

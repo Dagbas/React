@@ -1,24 +1,34 @@
 import PropTypes from "prop-types";
 
+//Prints a Movie Item
 function MovieItem(props) {
     return (
 <div className="row mt-3 d-flex justify-content-center">
     <div className="col-md-6 ">
-        <p>Movie Title: {props.title}</p>
-        <p>Description: {props.description}</p>
-        <p>Year: {props.year}</p>
-        <p>Genre: {props.genre}</p>
+        <div class="card">
+            <p>Movie Title: {props.title}</p>
+            <p>Description: {props.description}</p>
+            <p>Year: {props.year}</p>
+            <p>Genre: {props.genre}</p>
+        </div>
     </div>
 </div>
     )
 }
 
+//Default values and validation
 MovieItem.defaultProps = {
-    text: "Untitled To Do Item"
+    title: 'Untitled',
+    description: 'N/A',
+    year: 1900,
+    genre: 'N/A',
 }
 
 MovieItem.propTypes = {
-  text: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string,
+  year: PropTypes.number,
+  genre: PropTypes.string,
 };
 
 export default MovieItem;
